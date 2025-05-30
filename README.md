@@ -60,7 +60,15 @@ LIMITATIONS:
 
    * No data to know the format of the book - Audio, paperback, Hardcover or Kindle which will have impact on the Price of a book. Other data like dimensions, printing requirements are also not available.
 
-   * The dataset does not include the publication year of the books. This limits our ability to analyze trends over time. 
+   * The dataset does not include the publication year of the books. This limits our ability to analyze trends over time.
+
+CITATIONS: 
+
+For styling - https://www.markdownguide.org/cheat-sheet/ - Markdown Cheatsheet
+For Visualizations : https://stackoverflow.com/questions/52334938/how-to-add-vertical-lines-to-a-distribution-plot
+                     https://www.w3schools.com/python/matplotlib_pie_charts.asp
+                     https://seaborn.pydata.org/generated/seaborn.heatmap.html
+                     https://seaborn.pydata.org/generated/seaborn.scatterplot.html
 
 
 FUTURE SCOPE:
