@@ -1,12 +1,12 @@
 # 📚 Amazon Bestselling Book Analysis
 
-## 🎯 Goal
+## Goal
 
 **What kind of book sells well on Amazon’s self-publishing platform?**
 
 ---
 
-## 📦 Libraries Used
+## Libraries Used
 
 - `pandas`
 - `numpy`
@@ -15,7 +15,7 @@
 
 ---
 
-## 📊 Dataset Used
+## Dataset Used
 
 - **Source**: [Amazon Top 50 Bestselling Books (2009–2019) – Kaggle](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
 - **Year Analyzed**: 2024 version
@@ -23,14 +23,14 @@
 
 ---
 
-## 🕵️ Initial Observations
+## Initial Observations
 
 - Missing values in **`Brand`** and **`Number of Pages`** columns
 - Outliers detected in the **`Number of Pages`** column
 
 ---
 
-## 🧹 Data Cleaning Steps
+## Data Cleaning Steps
 
 - Dropped the **`Brand`** column
 - Removed rows with missing **`Number of Pages`**
@@ -41,7 +41,7 @@
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 - **Top-Selling Genres**: *Fantasy*, *Classics*, and *Motivational*
 - **Average Page Count**: ~313 pages
@@ -53,7 +53,7 @@
 
 ---
 
-## ✅ Recommendations
+## Recommendations
 
 | Aspect       | Recommendation                                  |
 |--------------|--------------------------------------------------|
@@ -64,7 +64,7 @@
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - No way to distinguish between **self-published** vs **traditionally published** books
 - **Format data** (e.g., paperback, Kindle, audiobook) is missing
@@ -72,14 +72,14 @@
 
 ---
 
-## 📌 Future Scope
+## Future Scope
 
 - Analyze **Author** popularity vs. sales performance
 - Compare **Manufacturers** for pricing patterns
 
 ---
 
-## 📚 Citations
+## Citations
 
 - **Dataset**: [Kaggle – Amazon Top 50 Bestselling Books (2009–2019)](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
 - **Markdown Styling**: [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
