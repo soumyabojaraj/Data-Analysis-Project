@@ -1,79 +1,90 @@
-GOAL: 
+# 📚 Amazon Bestselling Book Analysis
 
-   What kind of book sells well on Amazon’s self-publishing platform?
+## 🎯 Goal
 
-LIBRARIES USED:
+**What kind of book sells well on Amazon’s self-publishing platform?**
 
-   Pandas, Numpy, Matplotlib, Seaborn
+---
 
+## 📦 Libraries Used
 
-DATASET USED:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
 
-   Amazon bookselling dataset(2024) - Kaggle.com
+---
 
+## 📊 Dataset Used
 
-INITIAL OBSERVATIONS:
+- **Source**: [Amazon Top 50 Bestselling Books (2009–2019) – Kaggle](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
+- **Year Analyzed**: 2024 version
+- **Shape**: 4846 rows × 10 columns
 
-   * The dataset has 4846 rows and 10 columns
-   * There are missing values in columns 'Brand' and 'Number of Pages'
-   * There are some outliers in the 'Number of Pages' column.
+---
 
+## 🕵️ Initial Observations
 
-DATA CLEANING:
+- Missing values in **`Brand`** and **`Number of Pages`** columns
+- Outliers detected in the **`Number of Pages`** column
 
-   * Dropped the less necessary column: Brand 
-   * Dropped the rows with missing number of pages
-   * Removed outliers
-   * Renamed column ‘Reviews’ to ‘Ratings’
+---
 
-   The Cleaned dataset has 4710 rows and 9 Columns.
-   
+## 🧹 Data Cleaning Steps
 
-KEY INSIGHTS:
+- Dropped the **`Brand`** column
+- Removed rows with missing **`Number of Pages`**
+- Removed outliers based on page count
+- Renamed **`Reviews`** column to **`Ratings`**
 
-   * What genres sell best on Amazon? -- Fantasy, Classics, and Motivational content 
-  
-   * What is the average page count for a bestselling book? -- 313
+🔹 **Final Dataset Shape**: 4710 rows × 9 columns
 
-   * What is the optimal price range? -- $10 to $15
+---
 
-   * How are user ratings and the number of reviews distributed among the most successful genres? -- Higher ratings(〜4.8)
-     and more than 〜5K reviews. 
+## 🔍 Key Insights
 
-   * Do high ratings or review counts impact the price of a book? -- No strong correlation
+- **Top-Selling Genres**: *Fantasy*, *Classics*, and *Motivational*
+- **Average Page Count**: ~313 pages
+- **Optimal Price Range**: $10–$15
+- **Successful Genre Traits**:
+  - High ratings (~4.8)
+  - High review counts (~5,000+)
+- **Price vs. Ratings/Reviews**: No strong correlation found
 
+---
 
-RECOMMENDATIONS:
+## ✅ Recommendations
 
-   * Genre: ----   Focus on Fantasy, Classics, or Motivational content  
+| Aspect       | Recommendation                                  |
+|--------------|--------------------------------------------------|
+| **Genre**     | Focus on *Fantasy*, *Classics*, *Motivational*  |
+| **Page Count**| Aim for **300–320 pages**                       |
+| **Price**     | Set between **$10 and $15**                     |
+| **Ratings & Reviews** | Include inserts, engage with reader communities |
 
-   * Page Count: ----   Aim for 300–320 pages  
+---
 
-   * Price: ----   Set price range between $10 and $15
+## ⚠️ Limitations
 
-   * For Honest ratings and reviews: ---- Consider including book inserts/Reaching out to the reader communities for feedback.
+- No way to distinguish between **self-published** vs **traditionally published** books
+- **Format data** (e.g., paperback, Kindle, audiobook) is missing
+- No information on book **dimensions**, **printing requirements**, or **release year**
 
+---
 
-LIMITATIONS:
+## 📌 Future Scope
 
-   * Data doesnt have information to differentiate self- publishers and traditional publishers.
+- Analyze **Author** popularity vs. sales performance
+- Compare **Manufacturers** for pricing patterns
 
-   * No data to know the format of the book - Audio, paperback, Hardcover or Kindle which will have impact on the Price of a book. Other data like dimensions, printing requirements are also not available.
+---
 
-   * The dataset does not include the publication year of the books. This limits our ability to analyze trends over time.
+## 📚 Citations
 
-CITATIONS: 
-
-For styling - https://www.markdownguide.org/cheat-sheet/ - Markdown Cheatsheet
-
-For Visualizations : https://stackoverflow.com/questions/52334938/how-to-add-vertical-lines-to-a-distribution-plot
-                     https://www.w3schools.com/python/matplotlib_pie_charts.asp
-                     https://seaborn.pydata.org/generated/seaborn.heatmap.html
-                     https://seaborn.pydata.org/generated/seaborn.scatterplot.html
-
-
-FUTURE SCOPE:
-
-   * Author column can be explored to see if Author popularity has impact on sales.
-
-   * Manufacturers can be looked into for pricing insights/comparison.
+- **Dataset**: [Kaggle – Amazon Top 50 Bestselling Books (2009–2019)](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
+- **Markdown Styling**: [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+- **Visualizations**:
+  - [Vertical Lines in Distplot – StackOverflow](https://stackoverflow.com/questions/52334938/how-to-add-vertical-lines-to-a-distribution-plot)
+  - [Matplotlib Pie Charts – W3Schools](https://www.w3schools.com/python/matplotlib_pie_charts.asp)
+  - [Seaborn Heatmap](https://seaborn.pydata.org/generated/seaborn.heatmap.html)
+  - [Seaborn Scatterplot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html)
