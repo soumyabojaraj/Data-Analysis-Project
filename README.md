@@ -15,8 +15,7 @@
 
 ## Dataset Used
 
-- **Source**: [Amazon Top 50 Bestselling Books (2009–2019) – Kaggle](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
-- **Year Analyzed**: 2024 version
+- **Source**: 
 - **Shape**: 4846 rows × 10 columns
 
 
@@ -33,7 +32,7 @@
 - Removed outliers based on page count
 - Renamed **`Reviews`** column to **`Ratings`**
 
-🔹 **Final Dataset Shape**: 4710 rows × 9 columns
+ **Final Dataset Shape**: 4710 rows × 9 columns
 
 
 ## Key Insights
@@ -60,7 +59,7 @@
 ## Limitations
 
 - No way to distinguish between **self-published** vs **traditionally published** books
-- **Format data** (e.g., paperback, Kindle, audiobook) is missing
+- **Format data** (e.g., paperback, hardcover, Kindle, audiobook) is missing
 - No information on book **dimensions**, **printing requirements**, or **release year**
 
 
@@ -72,7 +71,7 @@
 
 ## Citations
 
-- **Dataset**: [Kaggle – Amazon Top 50 Bestselling Books (2009–2019)](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
+- **Dataset**: [Amazon Topselling Books ( :2024)](https://www.kaggle.com/datasets/abdulrafay5/amazon-topselling-books/data) 
 - **Markdown Styling**: [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 - **Visualizations**:
   - [Vertical Lines in Distplot – StackOverflow](https://stackoverflow.com/questions/52334938/how-to-add-vertical-lines-to-a-distribution-plot)
