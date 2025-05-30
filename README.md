@@ -1,0 +1,70 @@
+GOAL: 
+
+   What kind of book sells well on Amazon’s self-publishing platform?
+
+LIBRARIES USED:
+
+   Pandas, Numpy, Matplotlib, Seaborn
+
+
+DATASET USED:
+
+   Amazon bookselling dataset(2024) - Kaggle.com
+
+
+INITIAL OBSERVATIONS:
+
+   * The dataset has 4846 rows and 10 columns
+   * There are missing values in columns 'Brand' and 'Number of Pages'
+   * There are some outliers in the 'Number of Pages' column.
+
+
+DATA CLEANING:
+
+   * Dropped the less necessary column: Brand 
+   * Dropped the rows with missing number of pages
+   * Removed outliers
+   * Renamed column ‘Reviews’ to ‘Ratings’
+
+   The Cleaned dataset has 4710 rows and 9 Columns.
+   
+
+KEY INSIGHTS:
+
+   * What genres sell best on Amazon? -- Fantasy, Classics, and Motivational content 
+  
+   * What is the average page count for a bestselling book? -- 313
+
+   * What is the optimal price range? -- $10 to $15
+
+   * How are user ratings and the number of reviews distributed among the most successful genres? -- Higher ratings(〜4.8)
+     and more than 〜5K reviews. 
+
+   * Do high ratings or review counts impact the price of a book? -- No strong correlation
+
+
+RECOMMENDATIONS:
+
+   * Genre: ----   Focus on Fantasy, Classics, or Motivational content  
+
+   * Page Count: ----   Aim for 300–320 pages  
+
+   * Price: ----   Set price range between $10 and $15
+
+   * For Honest ratings and reviews: ---- Consider including book inserts/Reaching out to the reader communities for feedback.
+
+
+LIMITATIONS:
+
+   * Data doesnt have information to differentiate self- publishers and traditional publishers.
+
+   * No data to know the format of the book - Audio, paperback, Hardcover or Kindle which will have impact on the Price of a book. Other data like dimensions, printing requirements are also not available.
+
+   * The dataset does not include the publication year of the books. This limits our ability to analyze trends over time. 
+
+
+FUTURE SCOPE:
+
+   * Author column can be explored to see if Author popularity has impact on sales.
+
+   * Manufacturers can be looked into for pricing insights/comparison.
