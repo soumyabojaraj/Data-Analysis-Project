@@ -4,7 +4,6 @@
 
 **What kind of book sells well on Amazon’s self-publishing platform?**
 
----
 
 ## Libraries Used
 
@@ -13,7 +12,6 @@
 - `matplotlib`
 - `seaborn`
 
----
 
 ## Dataset Used
 
@@ -21,14 +19,12 @@
 - **Year Analyzed**: 2024 version
 - **Shape**: 4846 rows × 10 columns
 
----
 
 ## Initial Observations
 
 - Missing values in **`Brand`** and **`Number of Pages`** columns
 - Outliers detected in the **`Number of Pages`** column
 
----
 
 ## Data Cleaning Steps
 
@@ -39,7 +35,6 @@
 
 🔹 **Final Dataset Shape**: 4710 rows × 9 columns
 
----
 
 ## Key Insights
 
@@ -51,7 +46,6 @@
   - High review counts (~5,000+)
 - **Price vs. Ratings/Reviews**: No strong correlation found
 
----
 
 ## Recommendations
 
@@ -62,7 +56,6 @@
 | **Price**     | Set between **$10 and $15**                     |
 | **Ratings & Reviews** | Include inserts, engage with reader communities |
 
----
 
 ## Limitations
 
@@ -70,14 +63,12 @@
 - **Format data** (e.g., paperback, Kindle, audiobook) is missing
 - No information on book **dimensions**, **printing requirements**, or **release year**
 
----
 
 ## Future Scope
 
 - Analyze **Author** popularity vs. sales performance
 - Compare **Manufacturers** for pricing patterns
 
----
 
 ## Citations
 
